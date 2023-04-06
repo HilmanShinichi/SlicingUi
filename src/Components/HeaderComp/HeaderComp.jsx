@@ -62,12 +62,7 @@ const HeaderComp = () => {
 
 
       
-<div class="parent">
-<div class="div1">SIDEBAR</div>
-<div class="div2">CONTENT</div>
-<div class="div3">TABEL</div>
-<div class="div4">DETAIL ORDER</div>
-</div>
+
     </>
   );
 };
