@@ -30,8 +30,12 @@
 .parent {
   display: grid;
   grid-template-columns: 1fr 2fr 1.3fr;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+}
+
+.parent .div1{
+  height:700px;
 }
 
