@@ -1,0 +1,16 @@
+.icon1 svg{
+    color: grey;
+}
+
+.icon1 svg:hover {
+    color:#03C988;
+}
+
+.text-bg:hover{
+    color:#03C988;
+}
+
+.hover1:hover{
+background-color: #E9EDC9;
+border-left:5px solid #03C988;
+}

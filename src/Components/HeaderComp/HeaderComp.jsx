@@ -30,7 +30,7 @@ const HeaderComp = () => {
               </button>
             </div>
 
-            <div className="flex w-[200px] h-[60px] bg-blac mt-[10px] ml-[300px]">
+            <div className="flex w-[200px] h-[60px]  mt-[10px] ml-[300px]">
               <img
                 className="w-[50px] h-[50px]"
                 src="https://cdn-icons-png.flaticon.com/512/4140/4140061.png"

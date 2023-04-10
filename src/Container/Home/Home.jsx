@@ -2,7 +2,9 @@ import React from "react";
 import "./Home.css";
 import HeaderComp from "../../Components/HeaderComp/HeaderComp";
 import SidebarComp from "../../Components/SidebarComp/SidebarComp";
-import ContentComp from "../../Components/ContentComp/ContentComp";
+import ContentComp from "../../Components/ContentComp/ContentComp";   
+import DetailOrderComp from "../../Components/DetailOrderComp/DetailOrderComp";
+import TabelComp from "../../Components/TabelComp/TabelComp";
 
 const Home = () => {
   return (
@@ -11,8 +13,8 @@ const Home = () => {
       <div class="parent">
         <SidebarComp />
         <ContentComp/>
-        <div class="div3">TABEL</div>
-        <div class="div4">DETAIL ORDER</div>
+        <TabelComp/>
+        <DetailOrderComp/>
       </div>
     </>
   );
