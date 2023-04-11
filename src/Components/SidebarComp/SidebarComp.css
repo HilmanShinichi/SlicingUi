@@ -1,9 +1,23 @@
+.mieayam {
+    background-image: url("https://www.visitsingapore.com/id_id/dining-drinks-singapore/local-dishes/rojak/_jcr_content/par-carousel/carousel_detailpage/carousel/item_1.thumbnail.carousel-img.740.416.jpg");;
+    background-size:cover;
+    background-position: top;
+}
+
 .icon1 svg{
     color: grey;
 }
 
 .icon1 svg:hover {
-    color:#03C988;
+    color: white;
+}
+
+.icon1:hover{
+    background-color: #03C988;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-bg:hover{
@@ -14,3 +28,4 @@
 background-color: #E9EDC9;
 border-left:5px solid #03C988;
 }
+

@@ -1,0 +1,17 @@
+.halu{
+ border-bottom: 1px solid black;
+}
+
+.detail1{
+background-image: url('https://hips.hearstapps.com/hmg-prod/images/breakfast-cereal-meal-granola-with-milk-pomegranate-royalty-free-image-1638397250.jpg');
+    background-size: cover;
+    background-position: top;
+    border-radius: 100%;
+}
+
+.detail2{
+    background-image: url('https://media.self.com/photos/5e5fe10c1a8b3a0008d5c5cb/master/pass/cottage-cheese-rainbow-bowl.jpg');
+        background-size: cover;
+        background-position: top;
+        border-radius: 100%;
+    }

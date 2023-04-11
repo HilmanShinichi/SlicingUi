@@ -1,0 +1,10 @@
+.btnfilter{
+    background-color: #FEFBE9;
+    border: 1px solid #F5EBEB;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.table td:hover{
+    background-color: #EEEEEE;
+}

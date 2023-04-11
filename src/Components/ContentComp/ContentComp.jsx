@@ -10,7 +10,7 @@ const ContentComp = () => {
   <div class="basis-1/2">
   <span  className="text-xl font-bold">Healthy Salad<BsChevronCompactDown className="inline ml-2"/></span>
   <div><HiHome className="inline mr-2"/><span className="inline text-sm text-[grey]">Main Street no.12</span>
-  <MdVerified className="inline ml-2"/><span className="text-sm text-[grey]" >Verified Account</span>
+  <MdVerified className="inline ml-2"/><span className="text-sm text-[grey] ml-2" >Verified Account</span>
   </div>
   </div>
   <div class="basis-1/7 bg-[#009FBD] h-[50px] w-[70px] flex justify-center items-center rounded-2xl ml-2">
@@ -33,6 +33,11 @@ const ContentComp = () => {
   <div class="basis-1/6 ml-1">
     <p className="text-xs text-[grey]">Your Balance</p>
     <p className="font-bold">IDR 2.560.800</p>
+  </div>
+  <div class="basis-1/7 ml-1">
+    <div className="mb-[30px]">
+<a  href="" className="font-bold text-4xl text-[grey]">...</a>
+</div>
   </div>
 </div>
     </div>

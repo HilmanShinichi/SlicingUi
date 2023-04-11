@@ -12,12 +12,12 @@
     grid-area: 2 / 2 / 3 / 3;}
   .div4 {
     grid-area: 2 / 3 / 3 / 4;
-    background-color: #C8B6A6;
+    background-color: #EEEEEE;
   }
 
   
 
   body {
-      font-family: Poppins;
+      font-family: "Poppins";
   }
   
