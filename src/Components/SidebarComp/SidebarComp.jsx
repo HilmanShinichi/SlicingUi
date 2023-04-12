@@ -10,8 +10,10 @@ import {
 import { HiShoppingCart } from "react-icons/hi";
 import { AiFillSetting } from "react-icons/ai";
 import { MdAccountCircle } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const SidebarComp = () => {
+  const navigate = useNavigate()
   return (
     <div class="div1">
       <div className="w-[220px] m-auto h-[200px] mieayam">
@@ -33,7 +35,7 @@ const SidebarComp = () => {
                 <BsFileBarGraphFill className="w-10 h-[20px]" />
               </div>
               <div class="basis-1/4 text-bg inline-block pt-3 pb-2 " >
-                <a href="" className="">
+                <a href="" className="" onClick={() => navigate("/")}>
                   Home
                 </a>
               </div>
@@ -49,7 +51,7 @@ const SidebarComp = () => {
               <HiShoppingCart className="w-10 h-[20px]" />
             </div>
             <div class="basis-1/4 ml-2 pt-3 pb-2 text-bg">
-              <a href="">Order</a>
+              <a href="" onClick={() => navigate("/order")}>Order</a>
             </div>
             </div>
 
@@ -62,7 +64,7 @@ const SidebarComp = () => {
               <BsFillFileTextFill className="w-10 h-[15px]" />
             </div>
             <div class="basis-1/4 ml-2 pt-3 pb-2 text-bg">
-              <a href="">Menu</a>
+              <a href="" onClick={() => navigate("/menu")}>Menu</a>
             </div>
             </div>
           </div>
@@ -74,7 +76,7 @@ const SidebarComp = () => {
               <BsChatDotsFill className="w-10 h-[15px]" />
             </div>
             <div class="basis-1/4 ml-2 pt-3 pb-2 text-bg">
-              <a href="">Review</a>
+              <a href="" onClick={() => navigate("/review")}>Review</a>
             </div>
             </div>
           </div>
@@ -92,7 +94,7 @@ const SidebarComp = () => {
               <AiFillSetting className="w-10 h-[20px]" />
             </div>
             <div class="basis-1/4  pt-3 pb-2 text-bg">
-              <a href="">Settings</a>
+              <a href="" onClick={() => navigate("/settings")}>Settings</a>
             </div>
             </div>
           </div>
@@ -104,7 +106,7 @@ const SidebarComp = () => {
               <BsCreditCardFill className="w-10 h-[15px]" />
             </div>
             <div class="basis-1/4 pt-3 pb-2 text-bg">
-              <a href="">Payments</a>
+              <a href="" onClick={() => navigate("/payments")}>Payments</a>
             </div>
             </div>
           </div>
@@ -116,7 +118,7 @@ const SidebarComp = () => {
               <MdAccountCircle className="w-10 h-[20px]" />
             </div>
             <div class="basis-1/4 pt-3 pb-2 text-bg">
-              <a href="">Accounts</a>
+              <a href="" onClick={() => navigate("/accounts")}>Accounts</a>
             </div>
             </div>
           </div>
@@ -128,7 +130,7 @@ const SidebarComp = () => {
               <BsFillExclamationSquareFill className="w-10 h-[15px]" />
             </div>
             <div class="basis-1/4 ml-2 pt-3 pb-2 text-bg">
-              <a href="">Help</a>
+              <a href="" onClick={() => navigate("/help")}>Help</a>
             </div>
             </div>
           </div>

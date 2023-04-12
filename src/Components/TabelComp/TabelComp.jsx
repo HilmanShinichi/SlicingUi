@@ -1,30 +1,51 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import './TabelComp.css'
 import axios from "axios"
 import { AiFillFilter } from 'react-icons/ai';
 
-
 const TabelComp = () => {
-const [users, setUser] = useState([]);
+  const [users, setUser] = useState([]);
 
-useEffect(() => {
+  useEffect(() => {
     getUsers();
-}, []);
+  }, []);
 
+  const getUsers = async() => {
+    const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+    setUser(response.data)
+  }
 
-    const getUsers = async() => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-        setUser(response.data)
+  useEffect(() => {
+    const searchInput = document.getElementById('searchtabel');
+    const rows = document.querySelectorAll('tbody tr');
+
+    const handleSearch = (event) => {
+      const q = event.target.value.toLowerCase();
+      rows.forEach((row) =>{
+        row.innerText.toLocaleLowerCase().startsWith(q)
+        ? (row.style.display = "")
+        : (row.style.display = "none");
+      });
     }
+
+    searchInput.addEventListener("keyup", handleSearch);
+
+    return () => {
+      searchInput.removeEventListener("keyup", handleSearch);
+    }
+  }, []);
 
 
   return (
     <div class="div3">
       <div class="flex flex-row mt-[20px]">
-  <div class="basis-1/2">
+  <div class="basis-1/4">
     <p className="font-bold ">Food Order</p></div>
-  <div class="btnfilter ml-[230px]">
-  <button class="rounded-none "><AiFillFilter className="inline mr-2"/>Filter Order</button>
+  <div>
+    <input type="text" className="searchtabel" id="searchtabel" placeholder="search in data table"/>
+  </div>
+  <div class="btnfilter ml-[200px]">
+  <button class="rounded-none" id="filtertabel"><AiFillFilter className="inline mr-2"/>Filter Order</button>
   </div>
 </div>
 

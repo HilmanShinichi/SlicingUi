@@ -15,11 +15,11 @@ const DetailOrderComp = () => {
       <div class="flex ml-8 mr-8">
         <div class="basis-1/3 halu">
       
-          <button
+          <button id="coba22"
             className={activeTab === 1 ? "active" : ""}
             onClick={() => handleTabClick(1)}
-          >
-            <span className="text-sm font-bold">Items</span>
+          n>
+            <span className="text-sm font-bold ">Items</span>
           </button>
         </div>
         <div class="basis-1/3 halu">
@@ -72,6 +72,19 @@ const DetailOrderComp = () => {
         )}
         {activeTab === 2 && <p>Ini Progress</p>}
         {activeTab === 3 && <p>Ini Review</p>}
+      </div>
+      <br />
+      <br />
+      <div className="bg-[#E4DCCF] h-[200px] m-10 rounded-xl opacity-1">
+      <div className="">
+        <br />
+        <p className="font-bold ml-4">Manage Order</p>
+        <p className="font-bold ml-4">More Effective?</p>
+        <br/>
+        <p className="text-sm text-[grey] ml-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quas.</p>
+        <br />
+        <button className="bg-[#FF6000] w-[90%] rounded-lg ml-4">Learn More</button>
+      </div>
       </div>
     </div>
   );
