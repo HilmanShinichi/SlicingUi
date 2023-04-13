@@ -1,0 +1,36 @@
+.parentmenu{
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    grid-template-areas: 'headmenu myordermenu'
+                        'carosoulmenu  myordermenu'
+                        'foodcardmenu checkoutmenu';
+    grid-template-rows: 50px 500px 500px;
+}
+
+.headmenu{
+    grid-area: headmenu;
+}
+
+.carosoulmenu{
+    grid-area: carosoulmenu;
+}
+
+.foodcardmenu{
+    grid-area: foodcardmenu;
+    background-color: rgb(231, 231, 12);
+}
+
+.myordermenu{
+    grid-area: myordermenu;
+    background-color: darkmagenta;
+}
+
+.checkoutmenu{
+    grid-area: checkoutmenu;
+    background-color: darkorange;
+}
+
+.ulil{
+    background-repeat: no-repeat;
+    background-size: cover;
+}

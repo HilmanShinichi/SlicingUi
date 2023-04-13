@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './Container/Home/Home'
-import MenuComp from './Components/MenuComp/MenuComp';
+import MenuComp from './Components/MenuComp/MenuComp/MenuComp';
 import OrderComp from './Components/MenuComp/OrderComp';
 import ReviewComp from './Components/MenuComp/ReviewComp';
 import AccountsComp from './Components/OthersComp/AccountsComp';
