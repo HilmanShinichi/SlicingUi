@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Carosoulmenu.css'
 import { BsChevronCompactUp, BsChevronCompactDown } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
@@ -58,12 +59,12 @@ const Carosoulmenu = () => {
         <div className='hidden group-hover:block absolute top-[82%] right-[45%] -translate-x-0 translate-x-[-20%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactDown onClick={nextSlide} size={30}/>
         </div>
-        <div className=' absolute top-[50%] right-[1%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2  cursor-pointer'>
+        <div className='dotdot absolute top-[50%] right-[-0.5%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2  cursor-pointer'>
         <ul>
             {slides.map((slide, slideIndex) => (
                  
                   
-                    <li key={slideIndex} onClick={() => goToSlide(slideIndex)} className='text-2xl cursor-pointer'><RxDotFilled/></li>
+                    <li key={slideIndex} onClick={() => goToSlide(slideIndex)} className='text-2xl cursor-pointer '><RxDotFilled/></li>
                    
                
             ))}
