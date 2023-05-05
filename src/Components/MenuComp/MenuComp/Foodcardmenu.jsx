@@ -44,3 +44,15 @@ const Foodcardmenu = () => {
 }
 
 export default Foodcardmenu
+
+
+{/* <div className='w-[200px] bg-[red] h-[250px]'>
+        <div className='bg-[purple] w-250px h-[150px]'>
+        </div>
+        <div>
+          <p>Restaurant Name</p>
+          <p>Quantity : 3</p>
+          <p>Diskon Presentasi : 8.71</p>
+          <p>Diskon Price : 55</p>
+        </div>
+      </div> */}
