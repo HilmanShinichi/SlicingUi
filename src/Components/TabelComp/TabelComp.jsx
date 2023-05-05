@@ -13,7 +13,10 @@ const TabelComp = () => {
   const getUsers = async() => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/users');
     setUser(response.data)
+    
   }
+
+  
 
   useEffect(() => {
     const searchInput = document.getElementById('searchtabel');
